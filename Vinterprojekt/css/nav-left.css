@@ -1,0 +1,53 @@
+.nav-side-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.nav-left {
+  width: 70%;
+  height: 1000px;
+  border: 2px solid rgb(199, 199, 199);
+  background-color: rgba(196, 225, 215, 0.673);
+  box-shadow: 1px 1px 5px rgb(186, 186, 186);
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 200px 1fr 1fr;
+}
+
+.om-oss-row h1 {
+  font-family: Fredoka One;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0;
+  color: #173f43;
+}
+
+.om-oss-row p {
+  font-family: Fredoka One;
+  font-size: 15px;
+  color: #173f43;
+  margin: 0 15px;
+}
+
+.om-oss-icons {
+  margin-top: 10px;
+  height: 33px;
+}
+
+.om-oss-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.om-oss-icons img {
+  cursor: pointer;
+  height: 90%;
+  transition: height 0.1s;
+}
+
+.om-oss-icons img:hover{
+  height: 100%;
+}

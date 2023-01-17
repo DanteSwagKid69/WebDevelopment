@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    box-shadow: 1px 1px 5px rgb(186, 186, 186);
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.header-left {
+    min-width: 300px;
+    width: 17.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-left img {
+    height: 90%;
+}
+
+.header-middle {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.header-search-bar {
+    margin-left: 100px;
+    border: 2px solid rgb(199, 199, 199);
+    height: 24px;
+    width: 200px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.header-middle img {
+    height: 20px;
+    margin-left: -30px;
+}
+
+
+.header-right {
+    flex: 1;
+    border-right: 1px solid black;
+}
+
