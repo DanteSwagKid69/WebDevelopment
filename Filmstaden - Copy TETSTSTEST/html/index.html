@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmstaden</title>
+    <link rel="icon" href="../images/Logos/filmstadenLogo.png">
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/carousel1.css">
+    <link rel="stylesheet" href="../css/carousel-now-in-movies.css">
+    
+</head>
+
+<body onload="INIT(this)">
+    <header>
+        <div class="left-header">
+            <div class="header-part"><img src="../images/icons/menu.png" alt=""><div class="header-hover-rect"></div></div>
+            <div class="header-part"><img src="../images/Logos/filmstadenLogo.png" alt=""><div class="header-hover-rect"></div></div>
+            
+            
+            <div class="header-part"><p>Biljetter</p><div class="header-hover-rect"></div></div>
+            <div class="header-part"><p>Filmer & Trailer</p><div class="header-hover-rect"></div></div>
+            <div class="header-part"><p>Filmer & Trailer</p><div class="header-hover-rect"></div></div>
+            <div class="header-part"><p>Medlem</p><div class="header-hover-rect"></div></div>
+            <div class="header-part"><p>Presentkort</p><div class="header-hover-rect"></div></div>
+            <div class="header-part"><p>Företagsbiljetter</p><div class="header-hover-rect"></div></div>
+            <div class="header-part"><p>Möten & Event</p><div class="header-hover-rect"></div></div>
+        </div>
+        <div class="right-header">
+            <p>Stockholm</p>
+            <p>Logga In</p>
+        </div>
+    </header>
+
+    <div class="movie-play-showcase-container">
+        <a href="https://www.moviekids.tv/watch-movie/shrek-2-19339.5349343" target="_blank"><img
+                src="../images/icons/play-button.png" alt=""></a>
+    </div>
+    <div class="movie-play-title">
+        <div class="movie-play-title-info">
+            <p>Premiär 3 Maj</p>
+        </div>
+        <h1 class="movie-play-title-text">Shrek 2</h1>
+    </div>
+
+    <div class="carousel-top-list carousel">
+        <div class="carousel__title-row">
+            <h1>Topplistan</h1>
+            <h2>Visa Alla &#10095</h2>
+        </div>
+        <button class="carousel__button carousel__button--left is-hidden" onclick="PrevSlide(this)">
+            <p>&#10094</p>
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide slide-1">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/shaweshank-redemption.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">1. Shaweshank Redemption</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-godfather.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">2. The Godfather</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/schindlers-list.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">3. Schindlers List</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-dark-knight.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">4. The Dark Knight</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/12-angry-men.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">5. 12 Angry Men</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-2">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-godfather-2.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">6. The Godfather II</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/lord-of-the-rings-1.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">7. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/pulp-fiction.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">8. Pulp Fiction</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/inception.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">9. Inception</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/fight-club.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">10. Fight Club</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-3">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/lord-of-the-rings-2.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">11. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/forrest-gump.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">12. Forrest Gump</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-good-the-bad-the-ugly.jpg.crdownload" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">13. The Good The Bad The Ugly</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/lord-of-the-rings-3.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">14. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/goodfellas.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">15. Goodfellas</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-4">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/matrix.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">16. The Matrix</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/gök-nästet.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">17. Gökboet</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/The-empire-strikes-back.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">18. Star Wars</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/interstellar.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">19. Interstellar</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/seven.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">20. Seven</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right" onclick="NextSlide(this)">
+            <p>&#10095</p>
+        </button>
+
+        <div class="carousel__nav">
+            <button onclick="DotsHandler(this)" class="carousel__indicator current-slide"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+        </div>
+    </div>
+
+    <div class="carousel-top-list carousel">
+        <div class="carousel__title-row">
+            <h1>Barn och Familj</h1>
+            <h2>Visa Alla &#10095</h2>
+        </div>
+        <button class="carousel__button carousel__button--left is-hidden" onclick="PrevSlide(this)">
+            <p>&#10094</p>
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide slide-1">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/Asterix-Obelix.webp" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">1. Shaweshank Redemption</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/bamse-och-vulkanön.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">2. The Godfather</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/alfons-åberg.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">3. Schindlers List</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/dc-pets.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">4. The Dark Knight</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/den-lilla-sjöjungfrun.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">5. 12 Angry Men</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-2">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/den-magiska-månresan.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">6. The Godfather II</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/den-makalöse-maurice.webp" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">7. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/Elementärt.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">8. Pulp Fiction</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/folk-och-rövare-i-kamomillastad.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">9. Inception</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/knorr.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">10. Fight Club</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-3">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/lassemajas-skorpionens-gåta.webp" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">11. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/lilla-spöket-laban-spökdags.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">12. Forrest Gump</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/lyle-lyle-crocodile.webp" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">13. The Good The Bad The Ugly</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/mamma-mu-hittar-hem.webp" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">14. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/minioner-berättelsen-av-gru.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">15. Goodfellas</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-4">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/mucklorna.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">16. The Matrix</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/mumier-på-äventyr.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">17. Gökboet</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/mästerkatten-2.webp" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">18. Star Wars</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/nelly-rapp.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">19. Interstellar</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/kids/victor-och.josefine.webp" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">20. Seven</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right" onclick="NextSlide(this)">
+            <p>&#10095</p>
+        </button>
+
+        <div class="carousel__nav">
+            <button onclick="DotsHandler(this)" class="carousel__indicator current-slide"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+        </div>
+    </div>
+
+    <div class="carousel-top-list carousel">
+        <div class="carousel__title-row">
+            <h1>Topplistan</h1>
+            <h2>Visa Alla &#10095</h2>
+        </div>
+        <button class="carousel__button carousel__button--left is-hidden" onclick="PrevSlide(this)">
+            <p>&#10094</p>
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide slide-1">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/shaweshank-redemption.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">1. Shaweshank Redemption</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-godfather.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">2. The Godfather</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/schindlers-list.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">3. Schindlers List</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-dark-knight.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">4. The Dark Knight</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/12-angry-men.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">5. 12 Angry Men</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-2">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-godfather-2.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">6. The Godfather II</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/lord-of-the-rings-1.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">7. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/pulp-fiction.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">8. Pulp Fiction</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/inception.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">9. Inception</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/fight-club.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">10. Fight Club</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-3">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/lord-of-the-rings-2.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">11. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/forrest-gump.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">12. Forrest Gump</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/the-good-the-bad-the-ugly.jpg.crdownload" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">13. The Good The Bad The Ugly</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/lord-of-the-rings-3.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">14. Lord Of The Rings</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/goodfellas.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">15. Goodfellas</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-4">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/matrix.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">16. The Matrix</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/gök-nästet.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">17. Gökboet</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/The-empire-strikes-back.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">18. Star Wars</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/interstellar.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">19. Interstellar</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/seven.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">20. Seven</p>
+                    </div>
+                </li>
+                <li class="carousel__slide slide-4">
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/matrix.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">16. The Matrix</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/gök-nästet.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">17. Gökboet</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/The-empire-strikes-back.jpg" alt=""
+                            class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">18. Star Wars</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/interstellar.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">19. Interstellar</p>
+                    </div>
+                    <div class="carousel__movie-poster-container">
+                        <img src="../images/Posters/seven.jpg" alt="" class="carousel__movie-poster-image">
+                        <p class="carousel__movie-poster-title">20. Seven</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="carousel__button carousel__button--right" onclick="NextSlide(this)">
+            <p>&#10095</p>
+        </button>
+
+        <div class="carousel__nav">
+            <button onclick="DotsHandler(this)" class="carousel__indicator current-slide"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+            <button onclick="DotsHandler(this)" class="carousel__indicator"></button>
+        </div>
+    </div>
+
+    <script src="../js/carousel-top-list.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+
+</html>

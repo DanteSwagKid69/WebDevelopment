@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&family=Lobster&family=Mountains+of+Christmas:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Prompt:wght@400;700&family=Roboto:wght@400;700&family=Signika+Negative:wght@400;600;700&display=swap");
+
+.slider-1 {
+  height: 305px;
+  width: 1120px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+  display: flex;
+ justify-content: space-between;
+}
+
+.slider-1-arrow{
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  color: rgb(0, 0, 0);
+  background-color: gray;
+  height: 30px;
+  width: 30px;
+  transition: all 0.2s;
+}
+
+.slider-1-arrow:hover{
+  background-color: rgb(171, 171, 171);
+}
+
+
+.slider-1-card {
+  height: 305px;
+  width: 190px;
+  display: grid;
+  grid-template-rows: 280px 1fr;
+}
+
+
+.slider-1-card img {
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.slider-1-card p {
+  margin: 0;
+  margin-top: 7px;
+  text-align: center;
+  font-family: Signika Negative;
+  color: rgb(168, 168, 168);
+  font-size: 12px;
+}
