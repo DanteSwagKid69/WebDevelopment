@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/index/index.css">
+</head>
+
+<body>
+
+    <div class="products-container">
+        <div class="product-card">
+            <img src="/images/present.jpg" alt="" class="image">
+            <h2 class="title">Mystery Box</h2>
+            <p class="price">100 kr</p>
+            <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/car.jpg" alt="" class="image">
+            <h2 class="title">Car</h2>
+            <p class="price">3000 kr</p>
+            <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/dog.webp" alt="" class="image">
+            <h2 class="title">Noodles</h2>
+            <p class="price">25 kr</p>
+            <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/home.png" alt="" class="image">
+            <h2 class="title">Home</h2>
+            <p class="price">1594 kr</p>
+            <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
+        </div>
+    </div>
+
+
+    <div class="cart-container">
+        <h1 class="title">CART</h1>
+
+        <div class="cart-items-container">
+            
+        </div>
+
+        <p class="cart-total">Total: 3000 kr</p>
+    </div>
+
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>
