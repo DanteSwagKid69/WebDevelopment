@@ -5,7 +5,7 @@ if (document.readyState == "loading") {
 }
 
 function Ready() {
-    UpdateCart();
+  UpdateCart();
   UpdateCartTotal();
 }
 
@@ -13,7 +13,6 @@ function UpdateCart() {
   const cartContainer = document.querySelector(".cart-items-container");
   const cartRows = cartContainer.getElementsByClassName("cart-item");
   const itemArr = JSON.parse(localStorage.getItem("itemArr"));
-  console.log(cartRows);
   RefreshCartRows();
   RefreshCartRows();
   RefreshCartRows();
@@ -45,18 +44,14 @@ const QuantityChange = (t) => {
 const RemoveItemFromCart = (t) => {
   const cartContainer = document.querySelector(".cart-items-container");
   const cartRows = cartContainer.getElementsByClassName("cart-item");
-
   const itemArr = JSON.parse(localStorage.getItem("itemArr"));
+  console.log(cartRows);
   for (let i = 0; i < cartRows.length; i++) {
+    console.log(cartRows[i].querySelector(".in-cart-title").textContent);
     if (
       cartRows[i].querySelector(".in-cart-title").textContent ==
       t.parentElement.querySelector(".in-cart-title").textContent
     ) {
-      console.log(i + cartRows[i].querySelector(".in-cart-title").textContent);
-      console.log(
-        i + t.parentElement.querySelector(".in-cart-title").textContent
-      );
-      console.log(i + itemArr.length);
       if (itemArr.length == 1) itemArr.length = 0;
       else itemArr.splice(i, 1);
 
@@ -90,15 +85,23 @@ const MakeCartRows = () => {
 
   for (let i = 0; i < itemArr.length; i++) {
     let newItem = document.createElement("div");
-    const newItemContent = `<div class="cart-item">
-                <img src="${itemArr[i].src}" alt="" class="image">
-                <h2 class="in-cart-title">${itemArr[i].title}</h2>
-                <span class="price">${itemArr[i].price} kr</span><input value="${itemArr[i].quantity}" type="number" value="1" class="quantity" onchange="QuantityChange(this)">
-                <button onclick="RemoveItemFromCart(this)" class="remove-btn">REMOVE</button>
-                </div>`;
+    newItem.classList.add("sc__product-row");
+    newItem.classList.add("cart-item");
+    const newItemContent = `<div class="description">
+    <div class="image"></div>
+    <h2 class="in-cart-title">${itemArr[i].title}</h2>
+    </div>
+    <div class="size">s</div>
+    <input value="${itemArr[i].quantity}" class="quantity" onchange="QuantityChange(this)" class="quantity" type="number">
+    <button onclick="RemoveItemFromCart(this)" class="remove">&#128465</button>
+    <div class="price">${itemArr[i].price} Kr</div>`;
 
+    
     newItem.innerHTML = newItemContent;
     cartContainer.append(newItem);
+    const image = newItem.querySelector(".image");
+    image.style.background = `rgb(252, 252, 252) url(${itemArr[i].src}) center center no-repeat`;
+    image.style.backgroundSize = "Contain";
   }
 };
 

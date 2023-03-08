@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;500;600;700&display=swap");
 
 body {
+
   margin: 0;
   background-color: rgb(237, 237, 237);
 }
@@ -10,9 +11,10 @@ body {
 }
 
 .shoppingcart-container {
-  padding: 30px;
-  width: 70%;
-  margin: 0 auto;
+    padding: 30px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 100px;
   background-color: white;
 }
 
@@ -45,7 +47,7 @@ body {
   padding-bottom: 29px;
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 70px 70px 200px 100px 100px;
+  grid-template-columns: 400px 70px 70px 200px 100px 100px;
   height: 80px;
   margin: 29px 0;
 }
@@ -60,11 +62,8 @@ body {
   background-color: gray;
   height: 100%;
   aspect-ratio: 1;
-  background: rgb(252, 252, 252)
-    url(/images/products/jackets/dark-blue-arc.webp) center center;
-  background-size: contain;
+  background: url(/images/products/jackets/dark-blue-arc.webp) center center no-repeat;
   border: 1px solid rgb(238, 238, 238);
-  background-repeat: no-repeat;
   object-fit: cover;
 }
 
@@ -98,6 +97,10 @@ body {
   background-color: rgb(255, 137, 137);
   border: 1px solid rgb(238, 238, 238);
   border: none;
+}
+
+.sc__product-row > .remove:hover {
+  background-color: rgb(255, 100, 100);
 }
 
 .sc__product-row > .price {
