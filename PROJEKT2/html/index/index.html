@@ -13,27 +13,33 @@
 <body>
 
     <div class="products-container">
-        <div class="product-card">
+        <div data-quantity="5" class="product-card">
             <img src="/images/present.jpg" alt="" class="image">
             <h2 class="title">Mystery Box</h2>
             <p class="price">100 kr</p>
             <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
         </div>
-        <div class="product-card">
+        <div data-quantity="1" class="product-card">
             <img src="/images/car.jpg" alt="" class="image">
             <h2 class="title">Car</h2>
             <p class="price">3000 kr</p>
             <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
         </div>
-        <div class="product-card">
+        <div data-quantity="1" class="product-card">
             <img src="/images/dog.webp" alt="" class="image">
             <h2 class="title">Noodles</h2>
             <p class="price">25 kr</p>
             <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
         </div>
-        <div class="product-card">
+        <div data-quantity="1" class="product-card">
             <img src="/images/home.png" alt="" class="image">
             <h2 class="title">Home</h2>
+            <p class="price">1594 kr</p>
+            <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
+        </div>
+        <div data-quantity="1" class="product-card">
+            <img src="/images/products/jackets//dark-blue-arc.webp" alt="" class="image">
+            <h2 class="title">Jacket</h2>
             <p class="price">1594 kr</p>
             <button onclick="AddToCartClicked(this)" class="add-to-cart-btn">ADD</button>
         </div>
@@ -49,7 +55,8 @@
 
         <p class="cart-total">Total: 3000 kr</p>
     </div>
-
+    <script src="/js/cart.js"></script>
+    <script src="/js/makecart.js"></script>
 </body>
 
 </html>
